@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+  }
+  .wrapper {
+
+    position: relative;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex > div {
+    border: 1px solid;
+    box-sizing: border-box;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+  /*  for desktop  */
+  @media screen and (min-width: 600px) {
+    .flex > .optional {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 25%;
+      height: 100%;
+    }
+    .flex .main,
+    .flex .main2 {
+      margin-right: 25%;    /*  match the width of the "optinal"  */
+    }
+  }
