@@ -162,3 +162,7 @@ margin: 0 auto;
 
   text:hover { opacity: .7 !important;
     cursor: pointer; }
+    svg{
+      display: block;
+      margin: auto;
+  }
