@@ -30,7 +30,7 @@ var layout = d3.layout.cloud()
   .size([width, height])
   .words(words)
   .padding(10)
-  .fontSize(120)
+  .fontSize(107)
   .on("end", draw);
 layout.start();
 

@@ -1,5 +1,5 @@
 ! version = 2.0
-
+! var name= jiyoon
 + hello
 - hello, what is your name?
 
@@ -7,8 +7,8 @@
 - hi, what is your name?
 
 + my name is *
-- nice to meet you <star>, tell me about what you like to do.
-- nice meeting you <star> tell me about what you like to do.
+- Nice to meet you <star>, my name is <bot name>. Tell me about what you like to do.
+- Nice meeting you <star>, my name is <bot name>. Tell me about what you like to do.
 
 + thank you
 - you are welcome
