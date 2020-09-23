@@ -1,3 +1,6 @@
-I just included the images of my projects. 
-I intially made all of my sketches in separate site folders with differnt CSS files and I had trouble combining each of them. 
-I would like to have a working chatbot on the right-hand column. I wanted the site to be a "love letter" of sorts, showing my personal relationship with google in sending it very telling search queries every day. 
+I wanted the website to feel like a file that Google has on me, which is why I kept the styling as minimal as possible.
+    Do you feel like this works? or is there some styling I should add to further this idea. 
+The word cloud shows some common words I use in my search history, and they are clickable links. 
+The camera is meant to make the user feel like they are being watched, and the words overlayed are just some private or embarassing things I found in my search history.
+The chatbot is meant to represent the persona that Google has formed of me, which I gathered from which ad categories I was placed in. 
+    I'm still working on the chatbot to be able to respond to a lot of the common responses, but if you could list some simple phrases you typed into the chatbot that did not work, that would be great. 
