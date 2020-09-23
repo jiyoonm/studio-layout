@@ -3,11 +3,9 @@ html, body {
     font-family:Helvetica, sans-serif;
     font-size: 18pt;
   }
-  header{
-    font-size:35px;
-  }
-  .heading{
 
+  .heading{
+    font-size:40px;
     display: inline-block;
     margin: 10px 4.5% 10px;
 
