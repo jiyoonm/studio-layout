@@ -13,7 +13,7 @@ var words = [{"text":"why", "url":"/happy.html"},
 for (var i = 0; i < words.length; i++) {
     words[i].size = 10 + Math.random() * 90;
 }
-var margin = {top: 30, right: 0, bottom: 10, left: 0},
+var margin = {top: 50, right: 0, bottom: 20, left: 80},
 
     width = 1000- margin.left - margin.right,
     height = 580 - margin.top - margin.bottom;
@@ -30,7 +30,7 @@ var layout = d3.layout.cloud()
   .size([width, height])
   .words(words)
   .padding(10)
-  .fontSize(107)
+  .fontSize(100)
   .on("end", draw);
 layout.start();
 
