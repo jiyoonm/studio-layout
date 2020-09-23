@@ -56,7 +56,9 @@ margin: 0 auto;
     }
     .flex #main,
     .flex #main2 {
- 
+      justify-content: center;
+      display: block;
+
       height: 20%;
       margin-left:2%;
       margin-bottom: .7%;
@@ -81,7 +83,7 @@ margin: 0 auto;
     height: 60px;
     border: 2.5px solid;
     display: block;
-    width: 23%;
+    width: 23.2%;
     margin-top:20px;
     font-size: 20pt;
 

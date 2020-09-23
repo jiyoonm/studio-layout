@@ -2,6 +2,7 @@ var words = [{"text":"why", "url":"happy.html"},
              {"text":"tofu", "url":"https://www.koreanbapsang.com/kimchi-soondubu-jjigae-soft-tofu-stew-kimchi/"},
              {"text":"i", "url":"#"},
              {"text":"everybody", "url":"happy.html"},
+             {"text":"can", "url":"#https://www.google.com/search?rlz=1C1CHBF_enUS809US809&sxsrf=ALeKk01ASgzPm1eKL--AdM1-y5jXI13XkQ%3A1600898488355&ei=uMVrX5mNFZGA5wLNtrHYCg&q=can+i&oq=can+i&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIECAAQQzIECAAQQzIECC4QQzIECAAQQzIECC4QQzIECAAQQzIECAAQQzIECAAQQzoECAAQR1DnBFiRB2CdCWgAcAJ4AIABVIgBnwGSAQEymAEAoAEBqgEHZ3dzLXdpesgBCMABAQ&sclient=psy-ab&ved=0ahUKEwiZyeDNo4DsAhURwFkKHU1bDKsQ4dUDCA0&uact=5"},
              {"text":"loans", "url":"https://www.newschool.edu/financial-aid/federal-loans/"},
              {"text":"sleep", "url":"https://open.spotify.com/playlist/6HIpeOyHQvwCVtLnpDWMp3?si=mAi3fDRlRa6G2ppXW1CBVg"},
              {"text":"weather", "url":"https://weather.com/weather/tenday/l/New+York+City+NY?canonicalCityId=a701ee19c4ab71bbbe2f6ba2fe8c250913883e5ae9b8eee8b54f8efbdb3eec03"},
@@ -13,7 +14,7 @@ var words = [{"text":"why", "url":"happy.html"},
 for (var i = 0; i < words.length; i++) {
     words[i].size = 10 + Math.random() * 90;
 }
-var margin = {top: 50, right: 0, bottom: 20, left: 80},
+var margin = {top: 10, right: 10, bottom: 10, left: 10},
 
     width = 1000- margin.left - margin.right,
     height = 580 - margin.top - margin.bottom;
