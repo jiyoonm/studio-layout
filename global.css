@@ -1,33 +1,133 @@
 html, body {
     margin: 0;
+    font-family:Helvetica, sans-serif;
+    font-size: 12pt;
   }
+  header{
+    font-size:25px;
+  }
+  #heading{
+    display: inline-block;
+    margin: 10px;
+    width: auto; /* optional */
+    height: auto; /* optional */
+
+    text-align: center; 
+    height: auto;
+    border: 2px solid;
+    padding:5px;
+  }
+
+    #camera {
+      position:absolute;
+      box-sizing: border-box;
+      top:0;
+      width:100%;
+      height:100%;
+      z-index:-1;
+    }
+
   .wrapper {
 
+  width: 95%;
+  right:0;
+margin: 0 auto;
     position: relative;
   }
   .flex {
+ 
+    height: 50%;
+
     display: flex;
     flex-direction: column;
   }
   .flex > div {
-    border: 1px solid;
+    border: 2px solid;
     box-sizing: border-box;
   }
-  img {
-    object-fit: cover;
-    width: 100%;
-  }
-  /*  for desktop  */
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
     .flex > .optional {
+  
       position: absolute;
       right: 0;
       top: 0;
       width: 25%;
       height: 100%;
     }
-    .flex .main,
-    .flex .main2 {
-      margin-right: 25%;    /*  match the width of the "optinal"  */
+    .flex #main,
+    .flex #main2 {
+ 
+      height: 20%;
+      margin-left:2%;
+      margin-bottom: .7%;
+      margin-right: 25.7%;   
     }
   }
+  .chat {
+    width: 23.5%;
+    height: 88%;
+    position: fixed;
+    overflow: scroll;
+   }
+   .actions {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+   }
+   .actions input{
+    height: 30px;
+    display: block;
+    width: 23%;
+
+   }
+   .messages div {
+    max-width: 60%;
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 7px;
+   }
+   .messages .bot {
+    text-align: left;
+    margin-right: auto;
+    background: #4688f2;
+    color: white;
+   }
+   .messages .self {
+    text-align: right;
+    margin-left: auto;
+    background:#ededed
+   }
+   .behind{
+    text-align: justify;
+   color:white;
+   opacity: 50%;
+   margin-left: 30%;
+   margin-top: 30%;
+   position: relative;
+   z-index: 2;
+
+   
+ }
+ .behind1{
+  text-align: justify;
+ color:white;
+ opacity: 50%;
+ margin-left: 50%;
+ margin-top: 5%;
+ position: relative;
+ z-index: 2;
+
+}
+.behind3{
+  text-align: justify;
+ color:white;
+ margin-left: 10%;
+ padding-bottom: 10px;
+ opacity: 50%;
+
+ position: relative;
+ z-index: 2;
+
+}
