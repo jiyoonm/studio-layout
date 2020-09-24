@@ -1,11 +1,11 @@
 html, body {
     margin: 0;
     font-family:Helvetica, sans-serif;
-    font-size: 22pt;
+    font-size: 24pt;
   }
 
   .heading{
-    font-size:45px;
+    font-size:50px;
     display: inline-block;
     margin: 10px 4.5% 10px;
 
@@ -80,13 +80,13 @@ margin: 0 auto;
     width: 100%;
    }
    .actions input{
-    height: 60px;
+    height: 64px;
     border: 2.5px solid;
     display: block;
     width: 23.1%;
-    padding-left:1px;
+    padding: 0 2px;
     margin-top:20px;
-    font-size: 20pt;
+    font-size: 22pt;
 
    }
    .messages div {

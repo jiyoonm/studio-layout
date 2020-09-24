@@ -2,7 +2,7 @@ function wordCloud(selector) {
     var fill = d3.scale.category20();
   
     var margin = { top: 10, right: 10, bottom: 10, left: 10 },
-      width = 1000 - margin.left - margin.right,
+      width = 1050 - margin.left - margin.right,
       height = 500 - margin.top - margin.bottom;
   
     var svg = d3
@@ -12,7 +12,7 @@ function wordCloud(selector) {
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
       .append("g")
-      .attr("transform", "translate(500,250)");
+      .attr("transform", "translate(550,270)");
 
 
        
@@ -123,7 +123,7 @@ function wordCloud(selector) {
   ];
 
   for (var i = 0; i < words.length; i++) {
-    words[i].size = 100;
+    words[i].size = 110;
   }
   
   function showNewWords(vis, i) {

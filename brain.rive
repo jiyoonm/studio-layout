@@ -1,27 +1,43 @@
 ! version = 2.0
 ! var name= jiyoon
+! sub who's = who is
+
 + hello
-- hello, what is your name?
+- What is your name?
 
 + hi
-- hi, what is your name?
+- What is your name?
 
 + my name is *
-- Nice to meet you <star>, my name is <bot name>. Tell me about what you like to do.
-- Nice meeting you <star>, my name is <bot name>. Tell me about what you like to do.
+- <set user=<star1>>It's nice to meet you, <get user>. My name is <bot name>. How old are you?
 
-+ thank you
-- you are welcome
-- welcome
-- no problem
-- no worries
+
++ i am # years old
+* <star> > 20 => You are older than me! I am 20. What do you like to do?
+* <star> > 20  => You are younger than me! I am 20. What do you like to do?
+* <star> == 20  => You are the same age as me! I am 20. What do you like to do?
+
 
 + i like*
 - Oh that's cool, I like football. Ask me about it. 
-
+- Oh that's cool, I like barbecue. Ask me about it. 
+- Oh that's cool, I like shopping luxury fashion. Ask me about it. 
 
 + *
-- Sorry did not get what you said
-- I am afraid that i can not understand you
-- I did not get it
+- I'm not sure how to reply to that.
+- Try asking your question a different way.
+- Let's change the subject.
 - Sorry can you please elaborate that for me
+
++ [*] football [*]
+- I'm so excited for fantasy football. My team is amazing. Do you do fantasty football?
+- Roll tide! I love going to tailgates for Bama's football games. There is always great barbecue. Do you like barbecue?
+- I love college football. I watch the Iron Bowl every year. Have you been to a football game?
+
++ [*] barbecue [*]
+- I'm about to buy a giant grill for my backyard. It can cook a 4 pound turkey! Do you ever cook barbecue?
+- I eat barbecue probably about 3 times a week. I love pulled pork sanwiches. Let's talk about something else! Do you like luxury fashion?
+
++ [*] luxury [*]
+- I love luxury fashion. It makes me feel like I'm really treating myself. My favorite brand is Gucci. I have to go but lets talk again soon!
+- My favorite purse is from Dior! I only wear it for special occasions. Do you have a favortie luxury brand?
