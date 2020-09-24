@@ -16,7 +16,7 @@ for (var i = 0; i < words.length; i++) {
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
 
     width = 1000- margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    height = 700 - margin.top - margin.bottom;
 
 var svg = d3.select("#main2").append("svg")
 
@@ -31,7 +31,7 @@ var layout = d3.layout.cloud()
   .size([width, height])
   .words(words)
   .padding(10)
-  .fontSize(110)
+  .fontSize(90)
   .on("end", draw);
  
 layout.start();
@@ -40,7 +40,6 @@ function draw(words) {
   svg
     .append("g")
 .style('transform', 'translate(50%, 50%)')
-      .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
       .selectAll("text")
         .data(words)
       .enter().append("text")

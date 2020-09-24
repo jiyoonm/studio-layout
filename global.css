@@ -83,7 +83,8 @@ margin: 0 auto;
     height: 60px;
     border: 2.5px solid;
     display: block;
-    width: 23.2%;
+    width: 23.1%;
+    padding-left:1px;
     margin-top:20px;
     font-size: 20pt;
 
@@ -159,10 +160,18 @@ margin: 0 auto;
   height: auto;
   margin: 10px;
 }
-
+a{
+  color:#000126;
+}
+a:hover {
+color:gray;
+}
+a:visited { text-decoration: none;}
   text:hover { opacity: .7 !important;
+    text-decoration-style: dashed;
+    text-decoration: underline;
     cursor: pointer; }
-    svg{
+    /* svg{
       display: block;
       margin: auto;
-  }
+  } */
