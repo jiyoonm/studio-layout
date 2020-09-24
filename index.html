@@ -1,56 +1,66 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head><!-- meta info and links to external resources. -->
+	<head>
 		<meta charset="UTF-8">
+		<!-- The title should be the title of your project, so maybe something more specific than your name here -->
 		<title>Jiyoon Moon</title>
 		<link rel="stylesheet" type="text/css" href="global.css">
-		<!-- <script src="https://d3js.org/d3.v4.js"></script> -->
+
 		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<!-- Mind the indentation over here -->
   <script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
 		<script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/addons/p5.sound.min.js"></script>
 		<script type="text/javascript" src="script/seriously.js"></script>
 		<script type="text/javascript" src="script/seriously.blur.js"></script>
+		<!-- Mind the indentation over here as well, it should be consistent -->
 <!-- Load d3-cloud -->
 <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 	</head>
 	<body>
+		<!-- You don't need the extra inner div here. You can add the "heading" class the header tag, which would make your html semantically corrent -->
 		<header>
 			<div class=heading>
 			Jiyoon Moon
 		</div>
 		</header>
-        <div class="wrapper">
-            <div class="flex">
-              <div id="main"> 
-				<div id="camera"></div>
-				<div class="behind"> why do i spend so much money at trader joes
-			
-			  </div>
-			 <div class="behind1"> 
-			  it feels like something is in my eye<br>
-			  do i have covid<br>
-			  do i have covid<br>
-			  do i have covid<br>
-			  do i have covid<br>
-			  do i have covid<br>
-			  </div>
-			  <div class="behind3"> 
+		<!--
+			There's a lot of indentation issues- make sure to add a tab for every level of nesting in the html.
+			I started doing that in the next couple of lines, you should go over the rest of the file (above and below)
+		-->
+    <div class="wrapper">
+      <div class="flex">
+        <div id="main">
+					<div id="camera"></div>
+					<div class="behind">
+						why do i spend so much money at trader joes
+				  </div>
+			 		<div class="behind1">
+			  		it feels like something is in my eye<br>
+			  		do i have covid<br>
+			  		do i have covid<br>
+			  		do i have covid<br>
+			  		do i have covid<br>
+			  		do i have covid<br>
+					</div>
+					<!-- Things start to get messy and I think there may be some missing closing tags or something, causing the layout to break in the browser -->
+			  	<div class="behind3">
 				is it normal to not fall asleep<br>
 				normal squidward<br>
 				WHY does my text change to PURPLE????<br>
 				does past cancer treatment increase risk of covid
 				</div>
 			  </div>
-	
-			  <div id="main2"></div>
+
+				<div id="main2"></div>
+				<!-- You probably don't need both "optional" and "chat", you can have only one div here, and "chat" is more descriptive -->
 			                <div class="optional">  <div class="chat">
 				<div class="messages"></div>
 				<div id="edge"></div>
 				<form class="actions">
 				  <input type="text" placeholder= "press 'Enter' to send…">
-				</form> 
+				</form>
 			  </div>
 		   </div>
             </div>
