@@ -1,22 +1,24 @@
+/* css indentation matters too! The selectors should be indented in the same way, and the properties inside with an additional tab */
 html, body {
-    margin: 0;
-    font-family:Helvetica, sans-serif;
-    font-size: 22pt;
-  }
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 22pt;
+}
 
-  .heading{
-    font-size:45px;
-    display: inline-block;
-    margin: 10px 4.5% 10px;
-
-    width: auto; /* optional */
-    height: auto; /* optional */
-
-    text-align: center; 
-    height: auto;
-    border: 2.5px solid;
-    padding:6px;
-  }
+.heading {
+  font-size: 45px;
+  display: inline-block;
+  /*
+    Using percentage for margin/padding can get tricky across different viewport sizes.
+    Perhaps you can try using flex box and align the content to the center?
+    For that to work you will probably have to add a div around all of your content.
+  */
+  margin: 10px 4.5% 10px;
+  text-align: center;
+  height: auto;
+  border: 2.5px solid;
+  padding: 6px;
+}
 
     #camera {
       position:absolute;
@@ -35,7 +37,7 @@ margin: 0 auto;
     position: relative;
   }
   .flex {
- 
+    /* I don't think this is having any effect. Perhaps you need to use flex-basis? */
     height: 50%;
 
     display: flex;
@@ -47,13 +49,19 @@ margin: 0 auto;
   }
   @media screen and (min-width: 800px) {
     .flex > .optional {
-  
+
       position: absolute;
       right: 0;
       top: 0;
       width: 25%;
       height: 100%;
     }
+
+    /*
+      I would reorganize the html a little and change the way flexbox is applied.  The way I see it, you have a 2 column layout.
+      Column 1 should contains #main and #main2. Column 2 should contain .optional. If you change your html to do that, you won't have
+      to worry about all of these margins. You can let flexbox do the job for you.
+    */
     .flex #main,
     .flex #main2 {
       justify-content: center;
@@ -62,11 +70,11 @@ margin: 0 auto;
       height: 20%;
       margin-left:2%;
       margin-bottom: .7%;
-      margin-right: 25.7%;   
+      margin-right: 25.7%;
     }
   }
   .chat {
-    
+
     width: 23.5%;
     height: 80%;
 
@@ -116,7 +124,7 @@ margin: 0 auto;
    position: relative;
    z-index: 2;
 
-   
+
  }
  .behind1{
   text-align: justify;
